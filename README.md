@@ -33,7 +33,7 @@ structure_list:
 
 ```
 
-Supported cron options You can find on [http://docs.ansible.com/ansible/file_module.html](http://docs.ansible.com/ansible/file_module.html)
+Supported file options You can find on [http://docs.ansible.com/ansible/file_module.html](http://docs.ansible.com/ansible/file_module.html)
 
 License
 -------
