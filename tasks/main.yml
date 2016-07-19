@@ -1,0 +1,17 @@
+---
+
+- name: "Create structure"
+  action:
+    module:   file
+    path:     "{{ item.path }}"
+    state:    "{{ item.state }}"
+    group:    "{{ item.group | default(structure_group) }}"
+    owner:    "{{ item.owner | default(structure_owner) }}"
+    mode:     "{{ item.mode | default(structure_permission_ro) }}"
+    src:      "{{ item.src | default(omit) }}"
+    recurse:  "{{ item.recurse | default(omit) }}"
+    force:    "{{ item.force | default(omit) }}"
+  with_items: "{{ structure_list }}"
+  when: structure_list | default(None) != None
+  tags:
+    - structure
