@@ -3,7 +3,7 @@
 structure_group: "root"
 structure_owner: "www-data"
 
-structure_permission_ro: "a=r,g=xr,u=xr"
+structure_permission_ro: "a=r,g=xr,u=xrw"
 structure_permission_rw: "a=r,gu=xrw"
 
 structure_list: []
